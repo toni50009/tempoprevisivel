@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+.header p {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  gap: 10px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.input-container {
+  flex: 1;
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: #ebfffc;
+  color: #333;
+}
+
+.button {
+  background-color: #ebfffc;
+  border: none;
+  padding: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #d0e9e6;
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.suggestions div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions div:hover,
+.suggestion-item.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.result {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.weather-icon {
+  font-size: 40px;
+}
+
+.temp {
+  font-size: 2.5rem;
+}
+
+.city {
+  font-size: 2rem;
+  margin-top: 5px;
+}
+
+.description,
+.country {
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+/* Responsividade para telas maiores */
+@media (min-width: 600px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .input {
+    font-size: 1.2rem;
+  }
+
+  .temp {
+    font-size: 3.5rem;
+  }
+
+  .city {
+    font-size: 2.5rem;
+  }
+
+  .description,
+  .country {
+    font-size: 1.3rem;
+  }
+}
