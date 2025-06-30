@@ -128,6 +128,29 @@ body {
   padding: 10px;
 }
 
+.footer a {
+  text-decoration: none;
+}
+
+.download-button {
+  background-color: #111;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
+
+.siteref {
+  color: #007bff;
+}
+
 /* Responsividade para telas maiores */
 @media (min-width: 600px) {
   .header h1 {
